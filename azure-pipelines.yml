@@ -17,9 +17,9 @@ steps:
 
 - script: |
     npm install -g @angular/cli
-    workingDir: azure-project/src 
+    workingDir: azure-project
     npm install
-    workingDir: azure-project/src 
+    workingDir: azure-project
     ng build --prod
-    workingDir: azure-project/src
+    workingDir: azure-project
   displayName: 'npm install and build'
