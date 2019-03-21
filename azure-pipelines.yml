@@ -15,23 +15,15 @@ steps:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
 
-- task: Npm@0
-  displayName: 'npm install'
-  inputs:
-    command: install
-    workingDir: azure-project
-  
-- task: Npm@0
-  displayName: 'Build Angular'
-  inputs:
-    command: custom
-    workingDir: ’azure-project/src’
-    customCommand: ’run build:prod’
+- script: pwd 
+  displayName: ’current directory’
 
-- task: PublishPipelineArtifact@0
-  inputs:
-    artifactName: 'Angular'
-    targetPath: 'azure-project/dist'
+- script: cd azure-project && npm install 
+  displayName: ’install dependencies’
+
+- script: cd azure-project && npm build:prod 
+  displayName: ‘build project‘
+  
 
 
 
