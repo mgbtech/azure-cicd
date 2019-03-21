@@ -15,15 +15,13 @@ steps:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
 
-- script: dir
-  workingDirectory: $(Agent.BuildDirectory)
-  displayName: 'current directory'
 
 
-- script: cd azure-project && npm install 
+- script: npm install 
   displayName: ’install dependencies’
-  workingDirectory: 'azure-project'
 
+  
+ 
 
 - script: cd azure-project && npm build:prod 
   displayName: ‘build project‘
