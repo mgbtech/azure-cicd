@@ -23,7 +23,7 @@ steps:
   
  
 
-- script: cd azure-project && npm build:prod 
+- script: cd azure-project && npm run build:prod 
   displayName: ‘build project‘
   
 
