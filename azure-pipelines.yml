@@ -25,7 +25,7 @@ steps:
   displayName: 'Build Angular'
   inputs:
     command: custom
-    customCommand: run build -- --prod
+    customCommand: npm run build --prod
     workingDir: azure-project
 
 - task: PublishPipelineArtifact@0
