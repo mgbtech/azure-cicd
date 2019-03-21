@@ -23,8 +23,6 @@ steps:
 - script: cd azure-project && npm install 
   displayName: ’install dependencies’
 
-- script: cat
-- displayName: 'directory listing' 
 
 - script: cd azure-project && npm build:prod 
   displayName: ‘build project‘
