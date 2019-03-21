@@ -15,13 +15,12 @@ steps:
     versionSpec: '8.x'
   displayName: 'Install Node.js'
 
-
-
-- script: npm install 
-  displayName: ’install dependencies’
-
-  
- 
+- task: Npm@1 
+  displayName: 'npm install'
+  inputs:
+    command: custom
+    customCommand: run build -- --prod 
+    workingDir: azure-project
 
 - script: cd azure-project && npm run build:prod 
   displayName: ‘build project‘
