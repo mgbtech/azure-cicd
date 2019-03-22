@@ -21,7 +21,7 @@ steps:
   displayName: 'npm install'
   inputs:
     command: custom
-    customCommand: run build -- --prod 
+    customCommand: run build
     workingDir: azure-project
 
 - script: cd azure-project && npm run build:prod 
