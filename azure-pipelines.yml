@@ -19,4 +19,4 @@ steps:
 - script: cd azure-project && npm install -save @angular-devkit/build-angular
 - script: cd azure-project && npm install 
 
-- script: cd azure-project && npm run build -- -—prod
+- script: cd azure-project && ng build --prod
