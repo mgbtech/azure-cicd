@@ -12,10 +12,10 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '8.x'
+    versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: sudo npm install -g @angular/cli
+- script: sudo npm install -g @angular/cli@latest
 
 - task: Npm@1 
   displayName: 'npm install'
