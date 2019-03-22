@@ -19,7 +19,8 @@ steps:
 - script: sudo npm install -save @angular-devkit/build-angular
 - script: sudo npm install 
 
-- script: cd azure-project && npm run build
+- script: cd azure-project && npm run build -— prod
+d
 
   
 
