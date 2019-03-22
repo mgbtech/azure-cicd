@@ -15,8 +15,8 @@ steps:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
 
-- script: sudo npm install -g @angular/cli@latest
-- script: sudo npm install -save @angular-devkit/build-angular
-- script: cd azure-project && npm install 
+- script: npm install -g @angular/cli@latest
+- script: install -save @angular-devkit/build-angular
+- script: npm install 
 
 - script: npm run build -- -—prod
