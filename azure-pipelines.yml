@@ -16,7 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: npm install -g @angular/cli@latest
-- script: npm install -save @angular-devkit/build-angular
-- script: npm install 
+- script: cd azure-project && npm install -save @angular-devkit/build-angular
+- script: cd azure-project && npm install 
 
-- script: npm run build -- -—prod
+- script: cd azure-project && npm run build -- -—prod
