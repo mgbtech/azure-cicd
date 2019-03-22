@@ -16,6 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: sudo npm install -g @angular/cli@latest
+- script: sudo npm install -save @angular-devkit/build-angular
 
 - task: Npm@1 
   displayName: 'npm install'
